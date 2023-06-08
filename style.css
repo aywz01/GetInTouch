@@ -1,0 +1,140 @@
+#container{ 
+    margin: auto;
+    position: relative;
+    width: 1050px;
+    height: 700px;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+#top-section{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 180px;
+    background-color: white;
+}
+
+#bottom-section{
+    display: flex;
+    position: absolute;
+    background:
+        linear-gradient(to left, rgba(42,43,151,255), transparent),
+        linear-gradient(to right, rgba(232,27,110,255), transparent);
+    width: 100%;
+    left: 0px;
+    top: 180px;
+    height: 520px; 
+}
+
+#bottom-subsection{
+    display: flex;
+    justify-content: center;
+    flex: 50%;
+    padding: 10px; 
+}
+
+#form{
+    padding: 35px 30px 35px 55px;
+    margin: auto;
+    
+}
+
+#input{
+    padding: 10px;
+    background-color:transparent;
+    border: none;
+    text-decoration: white;
+    border-bottom:  2px solid  white;
+    width: 100%;
+}
+
+::placeholder{
+    color: white;
+    opacity: 50%;
+    width: 100%;
+}
+
+li{
+    display: inline-block;
+    width: 100%;
+    margin: 15px;
+    color: azure;
+}
+
+textarea{
+    resize: none;
+    height: 85px;
+    
+}
+
+
+#button{
+    display: block;
+    margin-left: 20px;
+    margin-right: auto;
+    height: 35px;
+    color:darkorchid;
+    font-weight:bolder;
+    border-radius: 25px;
+    width: 100%;
+    border:none;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#information-text{
+    padding: 35px 30px 35px 55px;
+    margin: auto; 
+    color: azure;
+}
+#information-text h1{
+    font-weight:100;
+    font-size:35px;
+}
+
+#information-text h4{
+    font-weight: bold;
+}
+
+#information-text p{ 
+    opacity: 75%;
+}
+
+#cards{
+    display: inline-block;
+    margin: 10px;
+    background-color:white ;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+#whole{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+#cards img{
+    padding: 20px 20px 0px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+}
+
+#social-links img{
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+ 
