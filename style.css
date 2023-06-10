@@ -20,7 +20,7 @@
 }
 
 .top-section{
-    background-color:aliceblue;
+    background-color:white;
 }
 
 .bottom-section{
@@ -151,7 +151,6 @@ textarea{
 
 @media only screen and (max-width:700px){
     .container{
-    width: 800px;
         grid-template-areas:
     'topsection topsection topsection topsection '
     'bottomsection bottomsection bottomsection bottomsection';
@@ -184,8 +183,8 @@ textarea{
     .container{
         width: 520px;
         grid-template-areas:
-        'topsection topsection'
-        'bottomsection buttomsection';
+        'topsection '
+        'bottomsection ';
         grid-template-rows: 180px 1200px;
     }
     .bottom-section{
@@ -197,12 +196,11 @@ textarea{
     }
     
     #whole{
-        justify-content:left;
+        justify-content:center;
         grid-template-areas: 'card card';
     }
 
     #cards{
-        margin-left: 0%;
         width: 175px;
         height: 175px;
         border-radius: 15px;
