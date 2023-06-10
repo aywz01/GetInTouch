@@ -2,19 +2,20 @@
 .bottom-section { grid-area: bottomsection; }
 .bottomsub1 { grid-area: bottomsub1; }
 .bottomsub2 { grid-area: bottomsub2; }
-#card  { grid-area: card; }
 
+*{
+    font-family: 'Lato', sans-serif;
+}
 
 .container{
     margin: auto;
-  display: grid;
-  grid-template-areas:
-    'topsection topsection topsection topsection topsection topsection'
-    'bottomsection bottomsection bottomsection bottomsection  bottomsection bottomsection';
-  background-color: whitesmoke;
-
-  padding: 10px;
-  width: 1050px;
+    display: grid;
+    grid-template-areas:
+        'topsection topsection topsection topsection topsection topsection'
+        'bottomsection bottomsection bottomsection bottomsection  bottomsection bottomsection';
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 1050px;
     box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
     grid-template-rows: 180px 520px;
 }
@@ -27,9 +28,7 @@
     background:
         linear-gradient(to left, rgba(42,43,151,255), transparent),
         linear-gradient(to right, rgba(232,27,110,255), transparent);
-    width: 100%;
     display: grid;
-    
     grid-template-areas: 
     'bottomsub1 bottomsub1 bottomsub1 bottomsub2 bottomsub2 bottomsub2 ';
 }
@@ -48,17 +47,15 @@
     padding: 10px; 
 }
 
-#form{
-    padding: 70px 30px 30px 40px;
-    margin: auto;
-    
+.form{
+    padding: 70px 30px 30px 40px; 
 }
 
-#input{
+.input{
     padding: 10px;
     background-color:transparent;
     border: none;
-    text-decoration: white;
+    color: white;
     border-bottom:  2px solid  white;
     width: 100%;
 }
@@ -66,7 +63,6 @@
 ::placeholder{
     color: white;
     opacity: 50%;
-    width: 100%;
 }
 
 li{
@@ -81,8 +77,7 @@ textarea{
     height: 85px;  
 }
 
-
-#button{
+.button{
     display: block;
     margin-left: 20px;
     margin-right: auto;
@@ -90,36 +85,45 @@ textarea{
     color:darkorchid;
     font-weight:bolder;
     border-radius: 25px;
+    border: none;
     width: 100%;
-    border:none;
     box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
-#information-text{
+.button:hover {
+    color: rgb(53, 80, 213);
+    cursor: pointer;
+  }
+
+.information-text{
     padding: 80px 50px 30px 50px;
     margin: auto; 
     color: rgb(255, 255, 255);
 }
-#information-text h1{
+.information-text h1{
     font-weight:100;
     font-size:35px;
 }
 
-#information-text h4{
+.information-text h4{
     font-weight: bold;
 }
 
-#information-text p{ 
+.information-text p{ 
     opacity: 75%;
 }
 
-#social-links img{
+.social-links img{
     width: 24px;
     height: 24px;
     margin: 10px;
 }
+.social-links > a :hover { 
+    transform: scale(1.1); 
+    }
 
-#whole{
+.whole{
     padding: 10px;
     margin: 10px;
     position: relative;
@@ -128,8 +132,7 @@ textarea{
     grid-template-areas: 'card card card card';
 }
 
-#cards{
-    
+.card{
     margin: 10px;
     background-color:white ;
     box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -137,10 +140,9 @@ textarea{
     height: 220px;
     border-radius: 15px;
     text-align: center;
-    
 }
 
-#cards img{
+.card img{
     padding: 20px 20px 0px 20px;
     display: block;
     margin:auto;
@@ -148,36 +150,25 @@ textarea{
     height: 50px;
 }
 
+.card > p > a{
+    color: rgb(204, 50, 199);
+}
 
-@media only screen and (max-width:700px){
+
+@media only screen and (max-width:850px){
     .container{
         grid-template-areas:
     'topsection topsection topsection topsection '
     'bottomsection bottomsection bottomsection bottomsection';
-    grid-template-rows: 180px 1040px; 
+    grid-template-rows: 180px 1000px; 
     
     }
     .bottom-section{
      grid-template-areas: 
      'bottomsub1  bottomsub1 '
      'bottomsub2  bottomsub2 ';
+     grid-template-rows: 500px 500px; 
     }
-
-    #cards{
-        width: 175px;
-        height: 175px;
-        border-radius: 15px;
-        text-align: center;  
-    }
-
-    #cards img{
-        display: block;
-        margin:auto;
-        width: 30px;
-        height: 30px;
-    }
-
-  
 }
 @media only screen and (max-width:500px){
     .container{
@@ -195,19 +186,19 @@ textarea{
      grid-template-rows: 200px 500px 500px;
     }
     
-    #whole{
+    .whole{
         justify-content:center;
         grid-template-areas: 'card card';
     }
 
-    #cards{
-        width: 175px;
-        height: 175px;
+    .card{
+        width: 180px;
+        height: 180px;
         border-radius: 15px;
         text-align: center;  
     }
 
-    #cards img{
+    .cards img{
         display: block;
         width: 30px;
         height: 30px;
