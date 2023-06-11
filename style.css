@@ -155,8 +155,10 @@ textarea{
 }
 
 
-@media only screen and (max-width:850px){
+@media only screen and (max-width:1023px){
+
     .container{
+        width: 100%;
         grid-template-areas:
     'topsection topsection topsection topsection '
     'bottomsection bottomsection bottomsection bottomsection';
@@ -164,19 +166,35 @@ textarea{
     
     }
     .bottom-section{
+        width: 100%;
      grid-template-areas: 
      'bottomsub1  bottomsub1 '
      'bottomsub2  bottomsub2 ';
      grid-template-rows: 500px 500px; 
     }
+   
+
+    .card{
+        width: 180px;
+        height: 180px;
+        border-radius: 15px;
+        text-align: center;  
+    }
+
+    .cards img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:840px){
+    
     .container{
-        width: 520px;
         grid-template-areas:
         'topsection '
         'bottomsection ';
         grid-template-rows: 180px 1200px;
+        width: 100%;
     }
     .bottom-section{
      grid-template-areas: 
@@ -184,6 +202,7 @@ textarea{
      'bottomsub1 ' 
      'bottomsub2 ';
      grid-template-rows: 200px 500px 500px;
+     width: 100%;
     }
     
     .whole{
