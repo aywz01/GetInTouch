@@ -161,25 +161,25 @@ textarea{
 @media only screen and (max-width:1023px){
 
     .container{
-        width: 100%;
         grid-template-areas:
     'topsection topsection topsection topsection '
     'bottomsection bottomsection bottomsection bottomsection';
     grid-template-rows: 180px 1000px; 
+    width: 100%;
     
     }
     .bottom-section{
-        width: 100%;
      grid-template-areas: 
      'bottomsub1  bottomsub1 '
      'bottomsub2  bottomsub2 ';
      grid-template-rows: 500px 500px; 
+     width: 100%;
     }
    
 
     .card{
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 220px;
         border-radius: 15px;
         text-align: center;  
     }
@@ -190,14 +190,14 @@ textarea{
         height: 30px;
     }
 }
-@media only screen and (max-width:840px){
+@media only screen and (max-width:767px){
     
     .container{
         grid-template-areas:
         'topsection '
         'bottomsection ';
         grid-template-rows: 180px 1200px;
-        width: 100%;
+
     }
     .bottom-section{
      grid-template-areas: 
@@ -227,4 +227,15 @@ textarea{
     }
 
 }
+
+@media only screen and (max-width:480px){
+    .container{
+        grid-template-areas:
+        'topsection '
+        'bottomsection ';
+    grid-template-rows: 180px 1200px; 
+    width: 480px;
+    }
+}
+
 
