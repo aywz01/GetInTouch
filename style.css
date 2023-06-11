@@ -3,13 +3,9 @@
 .bottomsub1 { grid-area: bottomsub1; }
 .bottomsub2 { grid-area: bottomsub2; }
 
-body,html{
-    box-sizing:border-box
-}
-
 *{
     font-family: 'Lato', sans-serif;
-    box-sizing: inherit;
+    box-sizing:border-box
 }
 
 .container{
